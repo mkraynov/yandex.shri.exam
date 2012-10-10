@@ -1,0 +1,22 @@
+{
+  "name": "yandex.shri.exam",
+  "description": "Yandex shri exam",
+  "author": "Mikhail Kraynov",
+  "version": "0.0.1",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/mkrainov/yandex.shri.exam.git"
+  },
+  "engines": {
+    "node": "0.6 | 0.7 | 0.8 | 0.9"
+  },
+  "dependencies": {
+    "bem": "~0.5.14",
+    "ometajs": "~2.1.10",
+    "xjst": "0.2.21",
+    "dom-js": "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "private": true
+}

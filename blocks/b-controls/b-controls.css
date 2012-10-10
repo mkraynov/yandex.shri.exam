@@ -1,0 +1,71 @@
+.b-controls
+{
+    position: absolute;
+    top: 10px;
+}
+.b-controls_mode_static
+{
+    position: static;
+}
+
+.b-controls__layout
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-left: -60px;
+}
+.b-controls_mode_inner .b-controls__layout
+{
+    margin-left: -80px;
+}
+.b-controls_mode_static .b-controls__layout
+{
+    margin-left: 0;
+}
+.b-controls__item
+{
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+.i-ua_js_yes .b-controls__item
+{
+    cursor: pointer;
+}
+.b-controls__item_view_inline {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 40px;
+}
+/*TODO: Переделать все картинки на спрайт */
+.b-controls__item_action_search
+{
+    background: url(b-controls__item_action_search.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_import
+{
+    background: url(b-controls__item_action_import.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_export
+{
+    background: url(b-controls__item_action_export.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_add
+{
+    background: url(b-controls__item_action_add.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_hide
+{
+    background: url(b-controls__item_action_hide.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_ok
+{
+    background: url(b-controls__item_action_ok.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_cancel
+{
+    background: url(b-controls__item_action_cancel.jpg) 0 0 no-repeat;
+}

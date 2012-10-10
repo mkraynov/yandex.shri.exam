@@ -1,0 +1,19 @@
+block b-lec-date {
+
+    js: true
+
+    mix: {
+        var mix = [];
+
+        this.isFirst() && mix.push({ elemMods: { position: 'first' } });
+        this.isLast() && mix.push({ elemMods: { position: 'last' } });
+
+        return mix;
+    }
+
+    elem title, tag: "h3"
+
+    mod pass true, mix: {
+        return [{ mods: { blur: 'true' } }];
+    }
+}

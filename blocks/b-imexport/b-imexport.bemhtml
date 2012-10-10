@@ -1,0 +1,40 @@
+block b-imexport {
+
+    mod mode import, content: [
+        {
+            block: 'b-form',
+            content: [
+                {
+                    block: 'b-textarea'
+                },
+                {
+                    block: 'b-controls',
+                    mix: [ { block: 'b-imexport', elem: 'control-container' } ],
+                    mods: { mode: 'static' },
+                    content: [
+                        {
+                            elem: 'layout',
+                            content: [
+                                { elem: 'item', elemMods: { view: 'inline', action: 'ok' } },
+                                { elem: 'item', elemMods: { view: 'inline', action: 'cancel' } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
+    mod mode export, content: [
+        {
+            block: 'b-form',
+            content: [
+                {
+                    block: 'b-textarea',
+                    content: this.ctx.content,
+                    attrs: [ { disabled: 'disabled'} ]
+                }
+            ]
+        }
+    ]
+}

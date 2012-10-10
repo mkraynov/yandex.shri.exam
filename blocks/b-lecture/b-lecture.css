@@ -1,0 +1,44 @@
+.b-lecture
+{
+    padding-left: 80px;
+    margin-bottom: 13px;
+}
+.b-lecture__title {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.b-lecture__time {
+    float: left;
+    margin-left: -80px;
+    font-size: 18px;
+}
+.b-lecture__lecturer {
+    display: none;
+    margin: 3px 0 5px;
+}
+.b-lecture__thesis-list
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-lecture__thesis
+{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.b-lecture_view_full .b-lecture__thesis-list,
+.b-lecture_view_full .b-lecture__lecturer
+{
+    display: block;
+}
+.b-lecture_blur_true,
+.b-lecture_blur_true .b-lecture__lecturer
+{
+    color: #888;
+}

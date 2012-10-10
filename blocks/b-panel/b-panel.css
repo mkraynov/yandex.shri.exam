@@ -1,0 +1,19 @@
+.b-panel
+{
+    border-left: 3px solid black;
+    padding: 10px 10px 10px 97px;
+    width: 770px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    margin-left: 100%;
+}
+.b-panel__tab
+{
+
+}
+.b-panel__tab_visibility_hidden
+{
+    display: none;
+}

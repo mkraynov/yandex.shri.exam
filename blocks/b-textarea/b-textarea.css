@@ -1,0 +1,17 @@
+.b-textarea
+{
+    border: 3px solid black;
+    background: white;
+    padding: 1em 2em;
+}
+.b-textarea__inner
+{
+    background: none;
+    border: 0 none;
+    outline: none;
+    height: 30em;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

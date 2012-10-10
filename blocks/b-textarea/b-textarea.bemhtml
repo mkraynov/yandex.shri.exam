@@ -1,0 +1,11 @@
+block b-textarea {
+    content: [
+        {
+            elem: 'inner',
+            content: this.ctx.content
+            //TODO: Прокинуть аттрибуты блока в реальную textarea
+        }
+    ]
+
+    elem inner { tag: 'textarea' }
+}

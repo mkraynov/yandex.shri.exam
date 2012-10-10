@@ -1,0 +1,14 @@
+block b-lecture {
+
+    js: true
+
+    elem title { tag: 'h5' }
+
+    elem thesis-list { tag: 'ul' }
+
+    elem thesis { tag: 'li', content: '—' + this.ctx.content }
+
+    mod recent true, mix: {
+        return [{ mods: { view: 'full' } }];
+    }
+}

@@ -1,0 +1,27 @@
+.b-lec-date
+{
+    margin-bottom: 30px;
+}
+.b-lec-date__title
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-variant: small-caps;
+
+    display: inline-block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.b-lec-date_blur_true,
+.b-lec-date_blur_true .b-lec-date__title
+{
+    color: #888;
+}
+.b-lec-date_blur_true .b-lec-date__title
+{
+    border-color: #888;
+}

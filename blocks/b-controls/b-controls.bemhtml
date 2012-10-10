@@ -1,0 +1,11 @@
+block b-controls {
+    js: true
+
+    elem layout, tag: 'ul'
+
+    elem item, tag: 'li'
+
+    mod mode static, elem layout, tag: 'div'
+
+    mod mode static, elem item, tag: 'span'
+}

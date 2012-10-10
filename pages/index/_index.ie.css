@@ -1,0 +1,283 @@
+/* index.css begin */
+/* ../../blocks/b-page/b-page.css begin */
+.b-page{
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ../../blocks/b-page/b-page.css end */
+
+/* ../../blocks/b-wrap/b-wrap.css begin */
+.b-wrap
+{
+    margin: 10px 20px;
+    padding: 0 10px 0 70px;
+    width: 880px;
+}
+
+/* ../../blocks/b-wrap/b-wrap.css end */
+
+/* ../../blocks/b-controls/b-controls.css begin */
+.b-controls
+{
+    position: absolute;
+    top: 10px;
+}
+.b-controls_mode_static
+{
+    position: static;
+}
+
+.b-controls__layout
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-left: -60px;
+}
+.b-controls_mode_inner .b-controls__layout
+{
+    margin-left: -80px;
+}
+.b-controls_mode_static .b-controls__layout
+{
+    margin-left: 0;
+}
+.b-controls__item
+{
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+.i-ua_js_yes .b-controls__item
+{
+    cursor: pointer;
+}
+.b-controls__item_view_inline {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.b-controls__item_action_search
+{
+    background: url(../../blocks/b-controls/b-controls__item_action_search.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_import
+{
+    background: url(../../blocks/b-controls/b-controls__item_action_import.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_export
+{
+    background: url(../../blocks/b-controls/b-controls__item_action_export.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_add
+{
+    background: url(../../blocks/b-controls/b-controls__item_action_add.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_hide
+{
+    background: url(../../blocks/b-controls/b-controls__item_action_hide.jpg) 0 0 no-repeat;
+}
+/* ../../blocks/b-controls/b-controls.css end */
+
+/* ../../blocks/b-lectorium/b-lectorium.css begin */
+.b-lectorium
+{
+    padding-left: 100px;
+    margin-top: -5px;
+}
+
+/* ../../blocks/b-lectorium/b-lectorium.css end */
+
+/* ../../blocks/b-lec-date/b-lec-date.css begin */
+.b-lec-date
+{
+    margin-bottom: 30px;
+}
+.b-lec-date__title
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-variant: small-caps;
+
+    display: inline-block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.b-lec-date_blur_true,
+.b-lec-date_blur_true .b-lec-date__title
+{
+    color: #888;
+}
+.b-lec-date_blur_true .b-lec-date__title
+{
+    border-color: #888;
+}
+
+/* ../../blocks/b-lec-date/b-lec-date.css end */
+
+/* ../../blocks/b-lecture/b-lecture.css begin */
+.b-lecture
+{
+    padding-left: 80px;
+    margin-bottom: 13px;
+}
+.b-lecture__title {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.b-lecture__time {
+    float: left;
+    margin-left: -80px;
+    font-size: 18px;
+}
+.b-lecture__lecturer {
+    display: none;
+    margin: 3px 0 5px;
+}
+.b-lecture__thesis-list
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.b-lecture__thesis
+{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.b-lecture_view_full .b-lecture__thesis-list,
+.b-lecture_view_full .b-lecture__lecturer
+{
+    display: block;
+}
+.b-lecture_blur_true,
+.b-lecture_blur_true .b-lecture__lecturer
+{
+    color: #888;
+}
+/* ../../blocks/b-lecture/b-lecture.css end */
+
+/* ../../blocks/b-user-link/b-user-link.css begin */
+.b-user-link
+{
+    color: black;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 24px;
+}
+.b-user-link__first-letter
+{
+    color: red;
+    font-style: normal;
+}
+
+/* ../../blocks/b-user-link/b-user-link.css end */
+
+/* ../../blocks/b-panel/b-panel.css begin */
+.b-panel
+{
+    border-left: 3px solid black;
+    padding: 10px 10px 10px 97px;
+    width: 770px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    margin-left: 100%;
+}
+.b-panel__tab
+{
+
+}
+.b-panel__tab_visibility_hidden
+{
+    display: none;
+}
+/* ../../blocks/b-panel/b-panel.css end */
+
+/* ../../blocks/b-form/b-form.css begin */
+.b-form
+{
+}
+
+/* ../../blocks/b-form/b-form.css end */
+
+/* ../../blocks/b-textarea/b-textarea.css begin */
+.b-textarea
+{
+    border: 3px solid black;
+    background: white;
+    padding: 1em 2em;
+}
+.b-textarea__inner
+{
+    background: none;
+    border: 0 none;
+    outline: none;
+    height: 30em;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* ../../blocks/b-textarea/b-textarea.css end */
+
+/* ../../blocks/b-import/b-import.css begin */
+.b-import
+{
+    display: none;
+    opacity: 0;
+    height: 90%;
+    overflow: auto;
+    padding: 0 20px 10% 0;
+}
+.b-import_visibility_visible
+{
+    opacity: 0;
+}
+.b-import_visibility_hidden
+{
+    opacity: 1;
+}
+.b-import__control-container {
+    text-align: center;
+    margin: 20px 0;
+}
+/* ../../blocks/b-import/b-import.css end */
+
+/* ../../blocks/b-export/b-export.css begin */
+.b-export
+{
+    height: 200px;
+    background: green;
+}
+
+/* ../../blocks/b-export/b-export.css end */
+
+/* ../../blocks/b-edit/b-edit.css begin */
+.b-edit
+{
+    height: 200px;
+    background: blue;
+}
+
+/* ../../blocks/b-edit/b-edit.css end */
+
+
+/* index.css end */
+

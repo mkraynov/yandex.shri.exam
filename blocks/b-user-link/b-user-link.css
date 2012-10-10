@@ -1,0 +1,13 @@
+.b-user-link
+{
+    color: black;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 24px;
+}
+.b-user-link__first-letter
+{
+    color: red;
+    font-style: normal;
+}

@@ -1,0 +1,14 @@
+([
+    "../../../../blocks/b-page/b-page.css",
+    "../../../../blocks/b-wrap/b-wrap.css",
+    "../../../../blocks/b-controls/b-controls.css",
+    "../../../../blocks/b-lectorium/b-lectorium.css",
+    "../../../../blocks/b-lec-date/b-lec-date.css",
+    "../../../../blocks/b-lecture/b-lecture.css",
+    "../../../../blocks/b-user-link/b-user-link.css",
+    "../../../../blocks/b-panel/b-panel.css",
+    "../../../../blocks/b-form/b-form.css",
+    "../../../../blocks/b-textarea/b-textarea.css",
+    "../../../../blocks/b-imexport/b-imexport.css",
+    "../../../../blocks/b-edit/b-edit.css"
+])
