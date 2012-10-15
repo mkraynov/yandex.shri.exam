@@ -9,11 +9,24 @@
     top: 0;
     margin-left: 100%;
 }
+@media print {
+    .b-panel
+    {
+        display: none;
+    }
+}
 .b-panel__tab
 {
-
+    display: none;
+    height: 90%;
+    overflow: auto;
+    padding: 0 20px 10% 0;
+}
+.b-panel__tab_visibility_visible
+{
+    opacity: 0;
 }
 .b-panel__tab_visibility_hidden
 {
-    display: none;
+    opacity: 1;
 }

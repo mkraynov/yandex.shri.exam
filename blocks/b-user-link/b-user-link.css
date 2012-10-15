@@ -11,3 +11,13 @@
     color: red;
     font-style: normal;
 }
+@media print {
+    .b-user-link
+    {
+        text-decoration: none;
+    }
+    .b-user-link:after
+    {
+        content: " [" attr(href) "] ";
+    }
+}

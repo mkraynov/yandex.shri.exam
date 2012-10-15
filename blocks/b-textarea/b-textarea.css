@@ -2,7 +2,7 @@
 {
     border: 3px solid black;
     background: white;
-    padding: 1em 2em;
+    padding: 1em 0;
 }
 .b-textarea__inner
 {
@@ -11,7 +11,7 @@
     outline: none;
     height: 30em;
     resize: none;
-    width: 100%;
-    padding: 0;
+    width: 96%;
+    padding: 0 2%;
     margin: 0;
 }

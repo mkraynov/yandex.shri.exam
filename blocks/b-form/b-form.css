@@ -1,3 +1,39 @@
 .b-form
 {
 }
+.b-form__inptext
+{
+    display: block;
+    margin-bottom: 1em;
+}
+.b-form__inptext i,
+.b-form__label i
+{
+    display: block;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+}
+.b-form__inptext input
+{
+    display: block;
+    border: 3px solid black;
+    background: white;
+    width: 98%;
+    padding: 0.4em 1%;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.b-form__inptext_clonable_true input
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 88%;
+}
+.b-form__clone
+{
+    margin-left: 20px;
+    margin-right: 0;
+    vertical-align: top;
+    margin-top: 3px;
+}

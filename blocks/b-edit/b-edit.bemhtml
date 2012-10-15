@@ -1,0 +1,58 @@
+block b-edit {
+
+    js: true
+
+    content: [
+        {
+            block: 'b-form',
+            mix: [{ block: 'b-edit', elem: 'form' }],
+            content: [
+                {
+                    elem: 'inptext',
+                    label: 'Тема',
+                    name: 'theme'
+                },
+                {
+                    elem: 'inptext',
+                    label: 'Дата',
+                    name: 'date',
+                    elemMods: { date: 'true' }
+                },
+                {
+                    elem: 'inptext',
+                    label: 'Докладчик',
+                    name: 'lecturer'
+                },
+                {
+                    elem: 'inptext',
+                    label: 'Ссылка на&nbsp;профиль докладчика',
+                    name: 'lecturer_url'
+                },
+                {
+                    elem: 'inptext',
+                    label: 'Тезисы',
+                    name: 'thesis_1',
+                    elemMods: { clonable: 'true' }
+                },
+                {
+                    elem: 'label',
+                    content: [
+                        { tag: 'i', content: 'Дополнительно' },
+                        { block: 'b-textarea', name: 'additional_info' }
+                    ]
+                },
+                {
+                    block: 'b-controls',
+                    mix: [ { block: 'b-edit', elem: 'control-container' } ],
+                    mods: { mode: 'static' },
+                    content: [
+                        {
+                            elem: 'layout',
+                            content: { elem: 'item', elemMods: { view: 'inline', action: 'ok' }, mix: [{ block: 'b-edit', elem: 'send' }] }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

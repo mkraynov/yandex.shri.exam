@@ -4,3 +4,11 @@
     padding: 0 10px 0 70px;
     width: 880px;
 }
+@media print {
+    .b-wrap
+    {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+}

@@ -14,9 +14,17 @@
 //                $window.on('scroll.b-controls', this.onWindowScroll, this);
 
                 var bWrap = this.findBlockOutside('b-wrap');
-                this.bindTo(this.elem('item'), 'click', function(e){
-                    bWrap.trigger('controls:click', {'action':this.getMod(e.data.domElem,'action')});
-                })
+                if (bWrap) {
+                    this.bindTo(this.elem('item'), 'click', function(e){
+                        bWrap.trigger(
+                            'controls:click',
+                            {
+                                'action' : this.getMod(e.data.domElem,'action'),
+                                'content': this.getMod(e.data.domElem,'content')
+                            }
+                        );
+                    });
+                }
             }
 
         },

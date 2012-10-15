@@ -1,5 +1,50 @@
 block b-form {
 
-    elem text { tag: 'input', attrs: [ { type: 'text' } ] }
+    js: 'true'
+
+    tag: 'form'
+
+    elem inptext {
+        tag: 'input',
+        attrs: {
+            type: 'text',
+            value: this.ctx.content || ''
+        }
+    }
+
+    elem inptext, this.ctx.name {
+        attrs: {
+            type: 'text',
+            name: this.ctx.name,
+            value: this.ctx.content || ''
+        }
+    }
+
+    elem inptext, this.ctx.label {
+        tag: 'label',
+        attrs: {},
+        content: [
+            { tag: 'i', content: this.ctx.label },
+            { elem: 'inptext', bem: false, name: this.ctx.name, content: this.ctx.content }
+        ]
+    }
+
+    elem inptext, this.ctx.label, elemMod clonable true {
+        content: [
+            { tag: 'i', content: this.ctx.label },
+            { elem: 'inptext', bem: false, name: this.ctx.name, content: this.ctx.content },
+            { elem: 'clone', mix: [{ block: 'b-controls', elem: 'item', elemMods: { view: 'inline', action: 'plus' } }] }
+        ]
+    }
+
+    elem inptext, this.ctx.label, elemMod date true {
+        content: [
+            { tag: 'i', content: this.ctx.label },
+            { elem: 'inptext', bem: false, content: this.ctx.content },
+            { tag: 'input', attrs: { type: 'hidden', name: this.ctx.name, value: this.ctx.content || '' } }
+        ]
+    }
+
+    elem label { tag: 'label' }
 
 }

@@ -14,9 +14,11 @@
                      * @this b-panel
                      */
                     $.proxy(function(e, data){
-                        var sAction = data.action.toString(),
-                            actionName = sAction.charAt(0).toUpperCase() + sAction.substr(1);
-                        (typeof this['show' + actionName] === 'function') && this['show' + actionName]();
+                        var action = data.action,
+                            content = data.content;
+                        if (action && typeof this[action.toString()] === 'function') {
+                            this[action.toString()](content);
+                        }
                     }, this)
                 );
             },
@@ -32,37 +34,34 @@
 
         },
 
-        showImport : function() {
-            this.findBlockInside({blockName: 'b-imexport', modName: 'mode', modVal: 'import'}).setMod('visibility', 'visible');
-            (this.getMod('visibility') !== 'visible') && this._show();
+        onElemSetMod : {
+            'tab' : {
+                'visibility' : {
+                    'visible' : function(elem) {
+                        elem.show().stop(true).animate({'opacity':1},600);
+                    },
+                    'hidden' : function(elem) {
+                        elem.stop(true).animate({'opacity':0},600,function(){
+                            $(this).hide();
+                        })
+                    }
+                }
+            }
         },
 
-        showExport : function() {
-            this.findBlockInside({blockName: 'b-imexport', modName: 'mode', modVal: 'export'}).setMod('visibility', 'visible');
-            (this.getMod('visibility') !== 'visible') && this._show();
+        show : function(content) {
+            var tab = this.elem('tab','content',content);
+            if (this.getMod('visibility') !== 'visible') {
+                this.setMod(tab, 'visibility', 'visible');
+                this.setMod('visibility', 'visible');
+            }
         },
 
-        showAdd : function() {
-            this.findBlockInside('b-edit').setMod('visibility', 'visible');
-            (this.getMod('visibility') !== 'visible') && this._show();
-        },
-
-        /*
-        *  Довольно странный метод получился,
-        *  но так не требуется вводить лишние проверки
-        *  и декларативность соблюдена
-        */
-        showHide : function() {
-            (this.getMod('visibility') === 'visible') && this._hide();
-            this.findBlockInside('b-imexport').setMod('visibility', 'hidden');
-        },
-
-        _show : function() {
-            this.setMod('visibility', 'visible');
-        },
-
-        _hide : function() {
-            this.setMod('visibility', 'hidden');
+        hide : function() {
+            if (this.getMod('visibility') === 'visible') {
+                this.setMod(this.elem('tab'), 'visibility', 'hidden');
+                this.setMod('visibility', 'hidden');
+            }
         }
 
     }, {

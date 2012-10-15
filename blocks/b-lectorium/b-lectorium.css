@@ -3,3 +3,9 @@
     padding-left: 100px;
     margin-top: -5px;
 }
+@media print {
+    .b-lectorium
+    {
+        padding-left: 0;
+    }
+}

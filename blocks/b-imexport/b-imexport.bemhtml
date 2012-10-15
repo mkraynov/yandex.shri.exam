@@ -1,11 +1,15 @@
 block b-imexport {
 
+    js: true
+
     mod mode import, content: [
         {
             block: 'b-form',
+            mix: [{ block: 'b-imexport', elem: 'form' }],
             content: [
                 {
-                    block: 'b-textarea'
+                    block: 'b-textarea',
+                    name: 'import'
                 },
                 {
                     block: 'b-controls',
@@ -14,10 +18,7 @@ block b-imexport {
                     content: [
                         {
                             elem: 'layout',
-                            content: [
-                                { elem: 'item', elemMods: { view: 'inline', action: 'ok' } },
-                                { elem: 'item', elemMods: { view: 'inline', action: 'cancel' } }
-                            ]
+                            content: { elem: 'item', elemMods: { view: 'inline', action: 'ok' },  mix: [{ block: 'b-imexport', elem: 'send' }] }
                         }
                     ]
                 }

@@ -3,6 +3,12 @@
     position: absolute;
     top: 10px;
 }
+@media print {
+    .b-controls
+    {
+        display: none;
+    }
+}
 .b-controls_mode_static
 {
     position: static;
@@ -41,21 +47,21 @@
     margin-right: 40px;
 }
 /*TODO: Переделать все картинки на спрайт */
-.b-controls__item_action_search
+.b-controls__item_content_search
 {
-    background: url(b-controls__item_action_search.jpg) 0 0 no-repeat;
+    background: url(b-controls__item_content_search.jpg) 0 0 no-repeat;
 }
-.b-controls__item_action_import
+.b-controls__item_content_import
 {
-    background: url(b-controls__item_action_import.jpg) 0 0 no-repeat;
+    background: url(b-controls__item_content_import.jpg) 0 0 no-repeat;
 }
-.b-controls__item_action_export
+.b-controls__item_content_export
 {
-    background: url(b-controls__item_action_export.jpg) 0 0 no-repeat;
+    background: url(b-controls__item_content_export.jpg) 0 0 no-repeat;
 }
-.b-controls__item_action_add
+.b-controls__item_content_add
 {
-    background: url(b-controls__item_action_add.jpg) 0 0 no-repeat;
+    background: url(b-controls__item_content_add.jpg) 0 0 no-repeat;
 }
 .b-controls__item_action_hide
 {
@@ -68,4 +74,8 @@
 .b-controls__item_action_cancel
 {
     background: url(b-controls__item_action_cancel.jpg) 0 0 no-repeat;
+}
+.b-controls__item_action_plus
+{
+    background: url(b-controls__item_action_plus.jpg) 0 0 no-repeat;
 }

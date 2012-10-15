@@ -1,5 +1,8 @@
 .b-edit
 {
-    height: 200px;
-    background: blue;
+
+}
+.b-edit__control-container {
+    text-align: center;
+    margin: 20px 0;
 }

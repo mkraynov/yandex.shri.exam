@@ -1,0 +1,8 @@
+block b-page {
+    elem css {
+        default, this.ctx.url, this.ctx.media: {
+            tag: 'link',
+            attrs: { rel: 'stylesheet', href: this.ctx.url, media: this.ctx.media }
+        }
+    }
+}

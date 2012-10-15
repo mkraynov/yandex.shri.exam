@@ -8,22 +8,25 @@
         onSetMod : {
 
             'js' : function() {
-                this.bindTo(this.elem('title'), {
-                    'click' : this.onTitleClick
-                });
+
             }
 
         },
 
         onTitleClick : function(e){
-            this.setMod('view', this.hasMod('view','full') ? 'folded' : 'full');
+            this.setMod('view', this.hasMod('view', 'full') ? 'folded' : 'full');
         }
 
     }, {
 
-    //    live : function() {
-    //        /* ... */
-    //    }
+        live: function() {
+            if (!this.inited) {
+                this.liveBindTo('title', 'click', function(e){ this.onTitleClick(e) });
+            }
+            this.inited = true;
+        },
+
+        inited: false
 
     });
 
