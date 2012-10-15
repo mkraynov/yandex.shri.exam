@@ -14,6 +14,11 @@ BEM.DOM.decl('b-form', {
             var dateinput = this.elem('inptext', 'date', 'true').find('input[type=text]');
             this.bindTo(dateinput, 'blur', this.parseDate);
 
+            this.bindTo(this.elem('inptext', 'clonable', 'true'), 'click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
             this.findBlockOutside('b-wrap').on('controls:click', $.proxy(this.resetForm, this));
         }
 
